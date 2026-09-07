@@ -1,4 +1,5 @@
-# funny_l_slam
+# funny_l_slam_ROS2_humble
+
 
 ## Terminal 1: Start Livox driver
 
