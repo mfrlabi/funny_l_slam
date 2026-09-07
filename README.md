@@ -34,3 +34,23 @@
     source install/setup.bash
     
     ros2 service call /save_map funny_lidar_slam/srv/SaveMap "{map_path: '', split_map: false}"
+
+
+
+
+    Publishing Fitness Score
+
+#The fitness score is automatically published to the ROS topic:
+bash
+
+## Echo the fitness score
+
+    ros2 topic echo /localization_fitness_score
+
+## Visualize with rqt_plot
+    
+    ros2 run rqt_plot rqt_plot /localization_fitness_score/data
+
+## Check topic info
+    
+    ros2 topic info /localization_fitness_score
