@@ -12,18 +12,20 @@
     source install/setup.bash
     ros2 launch funny_lidar_slam mapping_mid360.launch.py
 
-## Terminal 2: play bag file on Funny-Lidar-SLAM
+## Terminal 2: Start saving trajectory
+
+    cd ~/funny_lidar_slam_ws
+    source install/setup.bash
+    python3 save_funny_trajectory.py
+
+## Terminal 3: play bag file on Funny-Lidar-SLAM
     
     cd ~/funny_lidar_slam_ws
     source install/setup.bash
     unitree@lb22:~/mid360_downloaded/riverside2$ ros2 bag play riverside2.mcap 
 
 
-## Terminal 3: Start saving trajectory
 
-    cd ~/funny_lidar_slam_ws
-    source install/setup.bash
-    python3 save_funny_trajectory.py
 
 ## In another terminal 4: save the map
 
