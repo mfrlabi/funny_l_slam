@@ -41,7 +41,7 @@
 
 # Publishing Fitness Score
 
-# The fitness score is automatically published to the ROS topic:
+The fitness score is automatically published to the ROS topic:
 bash
 
 ## Echo the fitness score
