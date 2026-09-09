@@ -36,6 +36,11 @@
     
     ros2 service call /save_map funny_lidar_slam/srv/SaveMap "{map_path: '', split_map: false}"
 
+##ROS noetic
+
+     rosservice call /funny_lidar_slam/srv/save_map "{map_path: '', split_map: false}"
+
+ 
 
 
 
