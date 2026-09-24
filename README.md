@@ -36,6 +36,16 @@
     
     ros2 service call /save_map funny_lidar_slam/srv/SaveMap "{map_path: '', split_map: false}"
 
+
+
+## funny_rtk_ws
+
+## unitree@lb22:~/funny_rtk_ws$ ros2 service call /funny_lidar_slam/save_map funny_lidar_slam/srv/SaveMap   "{map_path: '', split_map: false, map_voxel_size: 0.2}"
+
+
+    ros2 service call /funny_lidar_slam/save_map funny_lidar_slam/srv/SaveMap   "{map_path: '', split_map: false, map_voxel_size: 0.2}"
+
+
 ##ROS noetic
 
      rosservice call /funny_lidar_slam/save_map "{map_path: '', split_map: false}"
